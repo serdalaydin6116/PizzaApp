@@ -29,7 +29,7 @@ def order(request):
         if form.is_valid():
             form.save()
             messages.success(request,"Your order created successfully")
-            return redirect("list")
+            return redirect("pizzas")
 
     context = {
         "form" : form
