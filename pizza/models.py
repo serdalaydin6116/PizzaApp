@@ -31,8 +31,8 @@ class Size(models.Model):
         return f"{self.title} "
 
 class Pizza(models.Model):
-    topping1=models.CharField(max_length=50, choices=TOPPINGS)
-    topping2=models.CharField(max_length=50, choices=TOPPINGS)
+    topping1=models.CharField(max_length=100, choices=TOPPINGS)
+    topping2=models.CharField(max_length=100, choices=TOPPINGS)
     piece=models.IntegerField()
     created_date=models.DateTimeField(auto_now_add=True)
 
